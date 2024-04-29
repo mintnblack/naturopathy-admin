@@ -1,0 +1,120 @@
+
+.userTableContainer{
+    position: relative;
+    margin: 20px 10px 0 10px;
+}
+
+.slidingTable{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.searchAndDateContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.searchQuerySelector{
+    width: 320px;
+    height: 40px;
+    border: 1px solid #DCE0E4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 0;
+}
+
+.searchIcon{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.rangePickerContainer{
+    border: 1px solid #DCE0E4;
+    height: 42px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.selectedRowsToDelete{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.deleteRowsCount{
+    font-size: 14px;
+}
+
+.deleteBtn{
+    background: #ffffff;
+    border: 1px solid red;
+    color: red;
+    outline: none;  
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 12px;
+    height: 40px;
+    width: fit-content;
+    padding: 0 20px;
+}
+
+/* loading on table */
+
+.appointmentTableLoading{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    background-color: rgba(244, 246, 248, 0.8) ;
+    z-index: 2;
+}
+
+.loadingScreen{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.loadingContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadingContainer h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .loadingScreen{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .searchAndDateContainer{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .searchQuerySelector,.rangePickerContainer{
+        width: 100%;
+    }
+}

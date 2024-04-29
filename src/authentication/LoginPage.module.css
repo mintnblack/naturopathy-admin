@@ -1,0 +1,176 @@
+@import '../App.css';
+
+.loginPageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* login banner */
+.loginBannerContainer {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    max-width: 464px;
+    box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+    padding-right: 10px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.heading {
+    margin-left: 40px;
+}
+
+.bannerImage {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+}
+
+/* form */
+
+.loginFormContainer {
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.loginFormSlider{
+    width: 500px;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loginForm, .otpForm{
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 0px;
+    transition:  transform 0.2s;
+}
+
+.loginForm{
+    right: 0%;
+}
+.otpForm{
+    right: 100%;
+}
+
+.loginFormPara {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.phoneInput {
+    border: 1px solid #DCE0E4;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.loginBtn {
+    width: 100%;
+    height: 40px;
+    background: var(--primary-color);
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-top: 42px;
+    cursor: pointer;
+}
+
+/* otp page */
+
+.buttonGroup{
+    margin-top: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resendBtn, .verifyBtn {
+    height: 40px;
+    width: 45%;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.resendBtn{
+    color: var(--primary-color);
+    border:  1px solid var(--primary-color);
+    background: white;
+}
+
+.verifyBtn{
+    color: #fff;
+    border:  1px solid transparent;
+    background: var(--primary-color);
+}
+.disabled{
+    color: rgba(0, 171, 86, 100);
+    border:  1px solid var(--primary-color);
+}
+
+.resendBtn:disabled{
+    color: black;
+    border:  1px solid black;
+    background: white;
+    height: 40px;
+    width: 45%;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .loginBannerContainer {
+        display: none;
+        flex-basis: 100%;
+    }
+
+    .loginFormContainer {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .loginFormSlider{
+        width: 310px;
+    }
+
+    .loginForm, .otpForm{
+        width: 100%;
+        max-width: 310px;
+        position: absolute;
+        top: 0px;
+    }
+}

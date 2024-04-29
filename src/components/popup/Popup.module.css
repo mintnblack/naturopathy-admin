@@ -1,0 +1,147 @@
+/* Decline appointment request popup content */
+
+.rejectAppointmentRequest {
+  margin: 20px;
+}
+
+.reasonText {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.textareaContainer {
+  /* border: 1px solid var(--input-inactive); */
+  width: 500px;
+  margin-top: 5px;
+  /* border-radius: 8px; */
+}
+.completePopupContainer {
+  /* border: 1px solid var(--input-inactive); */
+  width: 500px;
+  margin-top: 5px;
+  /* border-radius: 8px; */
+}
+
+.textarea {
+  padding: 10px;
+  width: 96% !important;
+  border-radius: 8px;
+}
+
+.otherReasonInput {
+  height: 45px;
+  width: 96%;
+}
+
+/* Schedule appointment popup */
+
+.SchedulePopup {
+  width: 600px;
+}
+
+.scheduledAppointment {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.scheduledAppointment p {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.scheduledAppointment h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--input-inactive);
+  outline: none;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.select:hover {
+  border: 1px solid var(--input-inactive);
+  outline: none;
+}
+
+.select:focus {
+  border: 1px solid var(--input-inactive);
+  outline: none;
+}
+
+.select:active {
+  border: 1px solid var(--input-inactive);
+  outline: none;
+}
+
+.select option {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  background-color: white !important;
+}
+
+/* Add external link popup */
+
+.addExternalLink {
+  padding: 0 16px;
+  overflow: hidden;
+}
+
+.addExternalLinkInput {
+  width: calc(600px - 50px) !important;
+}
+
+/* Reschedule popup */
+
+.workingDaysPTage {
+  margin: 0;
+  font-size: 10px !important;
+  color: var(--danger-color) !important;
+}
+
+.line {
+  margin: 0 20px;
+  border: none; /* Removes the default border */
+  height: 1px; /* Sets the height of the line */
+  background-color: #ccc; /* A lighter gray color */
+}
+.rightAlign {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .SchedulePopup {
+    width: auto;
+  }
+
+  .addExternalLinkInput {
+    width: calc(100%) !important;
+  }
+  .textareaContainer {
+    width: calc(100%) !important;
+  }
+  .textarea {
+    width: calc(100% - 20px) !important;
+  }
+}

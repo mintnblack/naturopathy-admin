@@ -1,0 +1,28 @@
+
+.personInfoContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.personDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.personName{
+    margin: 0;
+    padding: 0;
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.personInfo{
+    margin: 0;
+    padding: 0;
+    color: var(--text-secondary);
+    font-size: 12px;
+}

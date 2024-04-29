@@ -1,0 +1,95 @@
+
+.addAppointmentContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.addAppointmentContainer h5{
+    font-size: 16px;
+    margin: 0;
+}
+
+.insuranceAuthorisation h5{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.addAppointmentContainer p{
+    font-size: 14px;
+    margin: 0;
+}
+
+.ageDateGenderSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.ageDateGenderSectionCol h5 , .ageDateGenderSectionColSelector h5{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.ageDateGenderSectionCol , .ageDateGenderSectionColSelector{
+    width: calc(100% / 2);
+}
+
+.ageDateGenderSectionInput{
+    width: 100%;
+    height: 45px !important;
+}
+
+.selectorInput{
+    width: 100%;
+    height: 106%;
+    border: 1px solid var(--input-inactive);
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--text-secondary);
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.workingDays{
+    font-size: 12px !important;
+    line-height: 20px;
+}
+
+.workingDaysAndLinkContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.workingDaysAndLinkContainer a{
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--primary-color);
+    text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    .ageDateGenderSection{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ageDateGenderSectionCol{
+        width: calc(100% - 15px);
+    }
+    .ageDateGenderSectionColSelector{
+        width: 100%;
+    }
+    .workingDaysAndLinkContainer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+    

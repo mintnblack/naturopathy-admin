@@ -1,0 +1,150 @@
+.background{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background: rgba(99, 115, 129,0.2);
+}
+.sideBar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    width: 280px;
+    display: block;
+    border-right: 1px dashed #212028;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #212028;
+    transition: transform 0.5s;
+    z-index: 10;
+}
+
+.navigationBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    object-fit: fill;
+    filter: grayscale(100%);
+    margin-bottom: 20px;
+}
+
+.navabarLogoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.closeNavebarIcon{
+    margin-right: 18px;
+}
+
+/* profile image container */
+
+.profileBadgeConatainer {
+    margin-top: 34px;
+    margin-bottom: 60px;
+    width: 240px;
+    height: 70px;
+    background-color: #919eab1f;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+}
+
+.profileBadge {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.profileContents {
+    margin-left: 20px;
+}
+
+.profileName {
+    font-family: 600;
+    font-size: 16px;
+    color: #212B36;
+    margin: 0;
+}
+
+.profileStatus {
+    font-weight: 300px;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+/* navlink */
+
+.navlink {
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navLinkContent{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navlink:hover {
+    background-color: #919eab14;
+}
+
+.navlinkName {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    vertical-align: middle;
+    color: white;
+}
+
+.navbarSublist{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    height: 555px;
+}
+
+.navbarSublist li{
+    width: 100%;
+}
+
+.navbarSublistLink p{
+    width: 200px !important;
+    line-height: 40px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.navbarSublistLink p:hover {
+    background-color: #919eab14;
+    border-radius: 8px;
+}

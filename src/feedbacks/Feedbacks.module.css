@@ -1,0 +1,182 @@
+
+/* Feedback ratings section */
+
+.FeedBackRatings{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.totalRatingsContainer{
+    flex-basis: 20%;
+}
+
+.totalReverageReview{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.totalReviewsRatingsNumber{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.ratingProgressBarContainer{
+    flex-basis: 60%;
+}
+
+.ratingProgresbar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.ratingProgresbar span{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.ratingProgresbar img{
+    width: 14px;
+    margin-bottom: 8px;
+}
+
+
+/* Feedback reviews */
+
+
+.feedbackReviewHeader{
+    font-size: 20px;
+}
+
+.feedbackReviewContent{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-bottom: 1px solid #f4f3f3;
+}
+
+.reviewName{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.reviewEmail , .reviewSubject{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.feedbackSingleRating{
+    color: var(--text-primary);
+    margin-left: 10px;
+}
+
+.reviewFeedback{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 2;
+}
+
+
+.feedbackActionSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedbackActionBtnContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.acceptReviewBtn, .deleteReviewBtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.acceptReviewBtn img, .deleteReviewBtn img{
+    width: 18px;
+    height: 18px;
+}
+
+.acceptReviewBtn{
+    border: 1px solid var(--success-color);
+}
+
+.deleteReviewBtn{
+    border: 1px solid var(--danger-color);
+}
+
+.feedbackContentConainer{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Empty feedback page */
+
+.emptyReviews{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.emptyReviewsContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.emptyReviewsContainer img{
+    width: 280px;
+    height: auto;
+    object-fit: contain;
+}
+
+.emptyReviewsContainer h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 20px 0;
+}
+
+.emptyReviewsContainer p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .ratingProgressBarContainer{
+        flex-basis: 80%;
+    }
+}
